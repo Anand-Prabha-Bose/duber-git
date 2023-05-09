@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.details {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.ball-text {
+  position: fixed;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  left: 10%;
+  bottom: 30%;
+  transform: translate(-20%, -40%);
+}
+
+@media screen and (max-width: 1024px) {
+  .ball-text {
+    font-size: 2rem;
+    right: 50%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: transparent;
+}
+
+#nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: #111;
+  border-radius: 15px;
+}
+
+#nav h3 {
+  color: black;
+  display: inline-block;
+  margin: 0;
+  font-size: 32px;
+  padding: 14px 16px;
+}
+
+#nav button {
+    padding: 14px 16px;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+#nav button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s;
+}
